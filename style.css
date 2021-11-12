@@ -2,12 +2,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     width: 1440px;
+    height: 1046px;
     margin: 0px;
+    border: 1px solid black;
 }
 .course {
-    margin-top: 91px;
+    margin-top: 84px;
     margin-right: 150px;
-    margin-bottom: 157px;
+    margin-bottom: 164px;
     margin-left: 124px;
 }
 .top, .bottom, .offer {
@@ -16,7 +18,7 @@ body {
 }
 .top {
     align-items: flex-end;
-    height: 486px;
+    height: 550px;
 }
 .bottom {
     margin-top: 45px;
