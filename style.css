@@ -1,90 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    width: 1440px;
-    height: 1046px;
-    margin: 0px;
-    border: 1px solid black;
 }
-.course {
-    margin-top: 84px;
-    margin-right: 150px;
-    margin-bottom: 164px;
-    margin-left: 124px;
+
+.section {
+    width: 100%;
 }
-.top, .bottom, .offer {
-    display: flex;
+
+.container {
+    min-width: 1400px;
+    margin: 0 auto;
+    padding: 91px 124px;
     justify-content: space-between;
 }
-.top {
-    align-items: flex-end;
-    height: 550px;
-}
-.bottom {
-    margin-top: 45px;
-    justify-content: start;
-}
-.offer {
-    margin-top: 50px;
-}
-h1 {
+
+.title-md {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 55px;
-    margin-bottom: 45px;
-    margin-top: 0px;
+    line-height: 56px;
+    margin-bottom: 57px;
 }
-h3 {
-    font-size: 25px;
-    margin: 18px 0px;
-}
-.main-text p {
+
+/* Central Block */
+.central-text {
     font-size: 24px;
-    width: 662px;
-    line-height: 150%;
-    margin-bottom: 34px;
+    line-height: 36px;
 }
-.main-pic {
-    width: 314px;
-    height: 315px;
-    position: relative;
-    margin-bottom: 80px;
-    box-sizing: border-box;
+.central-text p:first-child {
+    padding-bottom: 36px;
 }
-.ellipse2 {
-    width: 366px;
-    height: 59px;
-    background-color: #EFEFEF;
-    border-radius: 50%;
-    position: absolute;
-    left: -20px;
-    bottom: -29px;
-    z-index: -1;
+.pic-lg {
+    max-width: 366px;
+    padding-top: 22px;
 }
-.tesis, .hour {
-    width: 150px;
+.central-block {
+    margin-bottom: 70px;
 }
-.hour {
-    margin: 0px 95px;
+
+/* Bottom Block */
+.pic-sm {
+    max-width: 232px;
 }
 .offer {
+    padding-top: 15px;
+}
+.offer-item {
+    list-style-type: none;
+}
+.offer-item li:first-child {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;  
+}
+.offer-item li:last-child {
     font-size: 18px;
-    box-sizing: border-box;
+    line-height: 23px;
+    padding-top: 1.1rem;
 }
-.side-pic {
-    width: 232px;
-    height: 203px;
-    margin-right: 135px;
-    position: relative;
-    box-sizing: border-box; 
+.bottom-block {
+    max-width: 90%;
 }
-.ellipse3 {
-    width: 189px;
-    height: 32px;
-    background-color: #EFEFEF;
-    border-radius: 50%;
-    position: absolute;
-    left: 33px;
-    bottom: -16px;
-    z-index: -1;
+
+/* Grid */
+.grid {
+    display: grid;
+}
+.offer {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.central-block {
+    grid-template-columns: 2fr 1fr;
+    gap: 9rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.bottom-block {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1399px) {
+    .container {
+        padding: 56px 72px;
+    }
+    .title-md {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 31px;
+    }
+    .central-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .central-text p:first-child {
+        padding-bottom: 23px;
+    }
+    .pic-lg {
+        max-width: 205px;
+        padding-top: 15px;
+    }
+    .central-block {
+        margin-bottom: 20px;
+        gap: 7rem;
+    }
+    .bottom-block {
+        grid-template-columns: 2fr 1fr;
+    }
+    .pic-sm {
+        display: none;
+    }
+    .offer-item li:first-child {
+        font-size: 15px;
+        line-height: 19px;  
+    }
+    .offer-item li:last-child {
+        font-size: 11px;
+        line-height: 14px;
+        padding-top: 0.1rem;
+    }
+
+}
+@media screen and (min-width: 375px) and (max-width: 829px) {
+    
 }
