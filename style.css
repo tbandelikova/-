@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    min-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 91px 124px;
     justify-content: space-between;
@@ -63,7 +63,7 @@ body {
 .offer-item li:last-child {
     font-size: 18px;
     line-height: 23px;
-    padding-top: 1.1rem;
+    padding-top: 10px;
 }
 .bottom-block {
     max-width: 90%;
@@ -130,5 +130,47 @@ body {
 
 }
 @media screen and (min-width: 375px) and (max-width: 829px) {
-    
+    .container {
+        padding: 56px 36px;
+    }
+    .title-md {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 23px;
+    }
+    .central-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .central-text p:first-child {
+        padding-bottom: 19px;
+    }
+    .pic-lg {
+        max-width: 171px;
+        padding-top: 14px;
+    }
+    .central-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+    .pic-sm {
+        display: none;
+    }
+    .offer {
+        padding-top: 47px;
+        gap: 50px;
+    }
+    .offer-item li:first-child {
+        font-size: 12px;
+        line-height: 16px;  
+    }
+    .offer-item li:last-child {
+        font-size: 10px;
+        line-height: 13px;
+        padding-top: 0.1rem;
+    }
 }
